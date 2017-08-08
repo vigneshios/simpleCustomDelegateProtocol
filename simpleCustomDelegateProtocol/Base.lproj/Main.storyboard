@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="simpleCustomDelegateProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt9-U3-TNw">
+                                <rect key="frame" x="16" y="515" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Pick a pill">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mE9-l3-jz4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHO-cl-bRx">
+                                <rect key="frame" x="0.0" y="249" width="359" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NuJ-61-VPh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OHO-cl-bRx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="18Z-ca-qkl"/>
+                            <constraint firstItem="OHO-cl-bRx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="229" id="8IE-9b-YDr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mt9-U3-TNw" secondAttribute="bottom" constant="122" id="Cts-Rr-a8b"/>
+                            <constraint firstAttribute="trailing" secondItem="OHO-cl-bRx" secondAttribute="trailing" constant="16" id="Wml-r6-XKO"/>
+                            <constraint firstItem="Mt9-U3-TNw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v3w-BO-a2M"/>
+                            <constraint firstItem="Mt9-U3-TNw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xdO-sl-GaS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chosenPillLabel" destination="OHO-cl-bRx" id="HBc-Xd-ccs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="109.29535232383809"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tXj-Cf-6j0">
+            <objects>
+                <viewController storyboardIdentifier="SecondscreenID" id="he3-VV-Cb4" customClass="SecondViewController" customModule="simpleCustomDelegateProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MqQ-Oq-EjU"/>
+                        <viewControllerLayoutGuide type="bottom" id="tG6-ag-szw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5M0-O3-fjm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTJ-iy-06e">
+                                <rect key="frame" x="16" y="132" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.12096120794544851" blue="0.086910006434460119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G4q-Ib-ywD"/>
+                                </constraints>
+                                <state key="normal" title="Red Pill">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redPillTaken:" destination="he3-VV-Cb4" eventType="touchUpInside" id="Ci0-NE-3yJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwJ-iX-qJP">
+                                <rect key="frame" x="16" y="360" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.19990653565807504" green="0.1509080398883903" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ofd-Y7-zgk"/>
+                                </constraints>
+                                <state key="normal" title="Blue Pill">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bluePillSelected:" destination="he3-VV-Cb4" eventType="touchUpInside" id="usx-gk-bM2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7a-PL-0tL">
+                                <rect key="frame" x="16" y="246" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.31379709269808587" green="1" blue="0.088401366733556253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QpD-bh-h69"/>
+                                </constraints>
+                                <state key="normal" title="Green Pill">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenPillSelected:" destination="he3-VV-Cb4" eventType="touchUpInside" id="429-n8-KrL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nwJ-iX-qJP" firstAttribute="leading" secondItem="5M0-O3-fjm" secondAttribute="leadingMargin" id="0VP-kC-jbK"/>
+                            <constraint firstItem="V7a-PL-0tL" firstAttribute="leading" secondItem="5M0-O3-fjm" secondAttribute="leadingMargin" id="6vI-uJ-iFI"/>
+                            <constraint firstItem="V7a-PL-0tL" firstAttribute="trailing" secondItem="5M0-O3-fjm" secondAttribute="trailingMargin" id="EPp-Zs-RqV"/>
+                            <constraint firstItem="V7a-PL-0tL" firstAttribute="top" secondItem="nTJ-iy-06e" secondAttribute="bottom" constant="84" id="HDJ-9z-rdI"/>
+                            <constraint firstItem="nwJ-iX-qJP" firstAttribute="top" secondItem="V7a-PL-0tL" secondAttribute="bottom" constant="84" id="PV9-Te-SDY"/>
+                            <constraint firstItem="nwJ-iX-qJP" firstAttribute="trailing" secondItem="5M0-O3-fjm" secondAttribute="trailingMargin" id="aPg-Gg-cd3"/>
+                            <constraint firstItem="nTJ-iy-06e" firstAttribute="top" secondItem="MqQ-Oq-EjU" secondAttribute="bottom" constant="112" id="dnf-IJ-u3D"/>
+                            <constraint firstItem="nTJ-iy-06e" firstAttribute="trailing" secondItem="5M0-O3-fjm" secondAttribute="trailingMargin" id="eeO-Og-0SB"/>
+                            <constraint firstItem="nTJ-iy-06e" firstAttribute="leading" secondItem="5M0-O3-fjm" secondAttribute="leadingMargin" id="gSH-nV-mNr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUP-uq-yQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741.60000000000002" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>
